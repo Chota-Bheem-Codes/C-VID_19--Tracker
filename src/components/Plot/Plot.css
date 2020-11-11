@@ -1,0 +1,14 @@
+.plot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.plot>h2{
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #99a8b2;
+}

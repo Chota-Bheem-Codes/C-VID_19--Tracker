@@ -1,0 +1,19 @@
+.statsCard{
+    padding: 0.1rem;
+}
+
+.cards {
+    display: flex;
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+

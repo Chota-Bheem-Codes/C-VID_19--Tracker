@@ -1,0 +1,15 @@
+.graph{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: flex-basis 500ms ease-in-out;
+}
+
+.graph>h1{
+    text-align: center;
+    margin: 2rem;
+}
+
+.graph>h1>span{
+    color: red;
+}

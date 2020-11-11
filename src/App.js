@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import CountryList from './components/CountryList/CountryList';
+import WorldwideGraph from './components/WorldwideGraph/WorldwideGraph';
 
 function App() {
+  const imageUrl='https://image.freepik.com/free-vector/covid-19-coronavirus-outbreak-design-with-virus-cell-microscopic-view-blue-background-illustration-template-dangerous-sars-epidemic-theme-promotional-banner-flyer_1314-2644.jpg';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <img src={imageUrl}/>
+      <CountryList/>
+      <WorldwideGraph/>
     </div>
   );
 }
