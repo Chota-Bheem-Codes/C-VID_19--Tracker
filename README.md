@@ -1,8 +1,8 @@
 This is my version of COVID-19 Tracker made in React.
 
-Tracking Data is fetched from [disease.sh](https://disease.sh/docs/) API. 
+Tracking Data is fetched from [disease.sh](https://disease.sh/docs/) API.  
 
-Check out a working version [here](https://chota-bheem-codes.github.io/C-VID_19--Tracker/).
+Yes,It works!! Check out [here](https://chota-bheem-codes.github.io/C-VID_19--Tracker/).
 
 # Getting Started with Create React App
 
