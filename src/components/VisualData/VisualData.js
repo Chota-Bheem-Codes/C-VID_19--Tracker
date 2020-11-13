@@ -8,11 +8,11 @@ const VisualData = ({country,countryData}) => {
     //const myData = [ {angle: 1, radius: 10}, {angle: 2, label: 'Super Custom label', subLabel: 'With annotation', radius: 20}, {angle: 5, radius: 5, label: 'Alt Label'}, {angle: 3, radius: 14}, {angle: 5, radius: 12, subLabel: 'Sub Label only', className: 'custom-class'} ];               
 
 
-    const popData = [{label:'Affected',angle: countryData.cases,radius:1.5,color: 'orange'},
+    const popData = [{label:'Cases',angle: countryData.cases,radius:1.5,color: 'orange'},
                      {label:'Total Population',angle: countryData.population,radius:1,color:'teal'}];
-    const casesData = [{label:'Cases',angle: countryData.cases,radius:1,color:'red'},
-                      {label:'Deaths',angle: countryData.deaths,radius:2,color:'grey'},
-                      {label:'Recovered',angle: countryData.recovered,radius:1.5,color:'green'}];
+    const casesData = [{label:'Active',angle: countryData.active,radius:1.2,color:'red'},
+                      {label:'Deaths',angle: countryData.deaths,radius:1.5,color:'grey'},
+                      {label:'Recovered',angle: countryData.recovered,radius:1,color:'green'}];
     
     return (
         <div className='pies'>   
