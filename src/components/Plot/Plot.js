@@ -1,6 +1,7 @@
 import React from 'react';
-import {XYPlot,YAxis,LineMarkSeries} from 'react-vis';
+import {XYPlot,YAxis,LineMarkSeries, XAxis, HorizontalGridLines, VerticalGridLines} from 'react-vis';
 import './Plot.css';
+import 'react-vis/dist/style.css';
 
 const plotTheData = (data) => {
 const ans=[];
@@ -48,10 +49,14 @@ const Plot = ({card,data}) => {
                             stackBy="x"
                             curve={'curveMonotoneY'}    
                             color={dotColor}
+                            lineStyle={{stroke:"#87556f"}}
                             markStyle={{stroke:{stroke}}}
                             data={plotedData}/>
 
                         <YAxis title="Numbers(Millions)" />
+                        
+                        <HorizontalGridLines />
+                        
             </XYPlot>
 
 

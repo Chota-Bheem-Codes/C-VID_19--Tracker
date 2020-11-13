@@ -1,3 +1,5 @@
+html {overflow: -moz-scrollbars-none;}
+
 .mainBody{
     display: flex;
     justify-content: space-evenly;
@@ -5,15 +7,19 @@
 
 @media screen and (max-width: 1160px) {
     .mainBody {
-      flex-direction: column;
-      justify-content: space-between;  
+      flex-direction: column;  
+    }
+    .mainBody .table{
+        display: flex;
+        justify-content: center;
+        min-width: 100vh;
     }
   }
 
 .table{
     display: inline-block;
     text-align: center;
-    max-height: 80vh; 
+    max-height: 90vh; 
     margin-bottom: 5rem;
     overflow: scroll;
     animation: slideIn 0.5s ease-in-out forwards;
@@ -49,10 +55,11 @@
     transition: all .4s ease-out;
 }
 
-.table>table>tbody>t:first-child:hover{
+.table>table>tbody>tr>td:first-child:hover{
     color: #71bfff;
-    text-shadow: -1 2px 1 rgb(29, 32, 46);
+    text-shadow: -1px 1px 8px rgb(190, 197, 238);
     transform: scale(1.2) ;
+    transition: all .2s ease-in;
 }
 
 .table tr{
@@ -82,5 +89,10 @@
     margin-left: 1rem; 
 }
 ::-webkit-scrollbar {
-    width: 0px;
+    display: none;
+    scrollbar-width: none;
+}
+
+:-moz-any(#content,#appcontent) browser{
+   overflow: hidden;
 }

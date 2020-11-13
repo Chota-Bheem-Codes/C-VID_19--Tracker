@@ -13,15 +13,27 @@ body{
 
 
 .app > img{
-  width: 20%;
+  width: 30%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: -1rem 0  3rem rgb(13, 22, 26);
-  
+  margin : 2.5rem auto;
+  margin-bottom : 1rem;
 }
 .app > h1{
   text-align: center;
   padding: 0.5rem;
   margin: 1rem ;
+}
+
+
+@media screen and (max-width: 720px) {
+
+  .app{
+      margin-top: auto;
+      align-items: center;
+      transform: scale(0.6);
+      position:absolute;
+      right:-2.8rem;
+      top:0px;
+      transform-origin:top right;
+  }
 }

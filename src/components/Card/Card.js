@@ -20,7 +20,8 @@ const Card = ({clicked,countryData,cardType}) => {
 
 
     return (
-        <div onClick={clicked} className={`card ${cardType}`}>
+        <div onClick={clicked} className='card'>
+
             <h2 className={cardType}>{cardType}</h2>
             <h1 className={cardType}>+{numeral(countryData[today]).format()}</h1>
             <h3 className={cardType}>{numeral(countryData[total]).format('0.00a')}</h3>

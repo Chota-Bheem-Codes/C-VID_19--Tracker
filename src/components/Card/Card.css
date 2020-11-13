@@ -9,7 +9,7 @@
     border-radius: 16px;
     background: #112c3f9d;
     box-shadow: -1rem 0 3rem #000;
-    transition: .2s;
+    transition: .2s ease-in;
     cursor: pointer;
 }
   
@@ -18,19 +18,65 @@
     transform: translateY(-1rem);
 }
 
-.card > .Cases {
+.card .Cases {
     color: red;
     text-align: center;
 }
 
-.card > .Recovered{
+.card .Recovered{
     color:green;
     text-align: center;
 }
 
-.card > .Deaths{
+.card .Deaths{
     color: #555555;
     text-align: center;
+}
+
+.card:hover h2[class="Cases"]{
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: 1px 1px 10px red;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card:hover h2[class="Recovered"]{
+    background: linear-gradient(90deg,#85ffa4,#08d9e098);
+    text-shadow: 1px 1px 10px green;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card:hover h2[class="Deaths"]{
+    background: linear-gradient(90deg,#e2e7e19f,#9d9fa098);
+    text-shadow: 1px 1px 10px grey;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card:hover h1[class="Cases"]{
+   transition: 0.2s ease-in;
+   transform: scale(1.2);
+   
+}
+
+.card:hover h1[class="Recovered"]{
+    transition: 0.2s ease-in;
+    transform: scale(1.2);
+    
+ }
+ 
+ .card:hover h1[class="Deaths"]{
+    transition: 0.2s ease-in;
+    transform: scale(1.2);
+    
+ }
+
+.card div{
+    background-color: red;
 }
 
 @keyframes slideUp {

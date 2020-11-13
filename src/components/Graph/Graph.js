@@ -21,10 +21,14 @@ const Graph = ({plotShow,card,country,countryData}) => {
                       (country==='Worldwide')?sethistoricalData(data):sethistoricalData(data.timeline);
                     });
                   
-    },[country]);
+    },[country,url]);
 
-    const heading = (country==='Worldwide')?(<h1>Worldwide <span>{numeral(countryData.active).format('00.00a')} </span> active cases</h1>):
-    (<h1>{country} has currently <span>{numeral(countryData.active).format('0.00a')}</span> active cases </h1>);
+    
+
+    const heading = (country==='Worldwide')?(<h1>Worldwide  ➜ <span>{numeral(countryData.active).format('00.00a')} </span> Active Cases</h1>):
+    (<h1>{country} ➜ <span>{numeral(countryData.active).format('0.00a')}</span> Active Cases</h1>);
+
+
     return (
         <div className="graph">
                 {heading}    

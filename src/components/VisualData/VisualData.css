@@ -1,8 +1,32 @@
 .pies{
     display: flex;   
-    transition: flex-basis 500ms ease-in-out;
+    justify-content: space-evenly;
     animation: scaleUp .8s ease-in-out forwards .8s;
 }
+
+.pie2{
+    border-radius:50%;
+    box-shadow: -1rem 0 3rem #000;
+    background-image: linear-gradient(to bottom left, #0c2d58,rgb(165, 165, 65));
+}
+
+.pie1{
+    border-radius:150%;
+    box-shadow: -1rem 0 7rem #000;
+    transition: 0.2s ease-in;
+}
+
+.pie1:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+}
+
+.pie2:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+}
+
+
 @keyframes scaleUp {
     0% {
       transform: scale(0.6);

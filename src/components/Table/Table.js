@@ -27,29 +27,32 @@ const Table = ({countryList}) => {
 
     return (
         <div className="mainBody">
-        <div className="table">
-            <table>
-            <thead>
-                <tr>
-                    <th>Country</th><th>Today</th><th>Total</th>
-                </tr>
-            </thead>
-            <tbody className="content">
-                {countryList.map(({country,todayCases,cases,countryInfo}) =>(
-                    <tr onClick={displayDetails} key={country}>
-                        <td className="countryName" value={country}>
-                            {country} 
-                            <img className="countryName" value={country} src={countryInfo.flag}/> 
-                        </td>
-                        <td><span>+{numeral(todayCases).format()}</span></td>
-                        <td><strong>{numeral(cases).format()}</strong></td>
+
+            <div className="table">
+                <table>
+                <thead>
+                    <tr>
+                        <th>Country</th><th>Today</th><th>Total</th>
                     </tr>
-                    
-                ))}
-            </tbody>
-            </table>
-        </div>
-                <StatsCards country={country} countryData={countryData} />
+                </thead>
+                <tbody className="content">
+                    {countryList.map(({country,todayCases,cases,countryInfo}) =>(
+                        <tr onClick={displayDetails} key={country}>
+                            <td className="countryName" value={country}>
+                                {country} 
+                                <img className="countryName" value={country} src={countryInfo.flag}/> 
+                            </td>
+                            <td><span>+{numeral(todayCases).format()}</span></td>
+                            <td><strong>{numeral(cases).format()}</strong></td>
+                        </tr>
+                        
+                    ))}
+                </tbody>
+                </table>
+            </div>
+
+             <StatsCards country={country} countryData={countryData} />
+
         </div>
     )
 }

@@ -7,9 +7,21 @@
 
 .graph>h1{
     text-align: center;
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+    max-width: 35rem;
 }
 
 .graph>h1>span{
     color: red;
+    transition: 0.2s ease-in;
+}
+
+.graph>h1>span:hover{
+    background: linear-gradient(90deg,#e9c8a2,#e52e71);
+    text-shadow: 1px 1px 5px red;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
 }
